@@ -46,4 +46,16 @@ export class AppController {
   music(): boolean {
     return true;
   }
+
+  @Redirect(URL.SONG, 301)
+  @Get('song')
+  song(): boolean {
+    return true;
+  }
+
+  @Redirect(URL.FANCIM, 301)
+  @Get('fancim')
+  fancim(): boolean {
+    return true;
+  }
 }
