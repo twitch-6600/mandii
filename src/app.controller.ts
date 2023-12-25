@@ -58,4 +58,16 @@ export class AppController {
   fancim(): boolean {
     return true;
   }
+
+  @Redirect(URL.CHZZK, 301)
+  @Get('chzzk')
+  chzzk(): boolean {
+    return true;
+  }
+
+  @Redirect(URL.CHZZK, 301)
+  @Get('%EC%B9%98%EC%A7%80%EC%A7%81') // '치지직'
+  chzzkKo(): boolean {
+    return true;
+  }
 }
